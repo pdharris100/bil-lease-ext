@@ -1,0 +1,42 @@
+  {
+    "name": "Car Price Estimator",
+    "version": "1.0",
+    "description": "Car Price Estimator",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://www.bilbasen.dk/*"
+    ],
+    "action": {
+      "default_title": "Car Price Estimator",
+      "default_icon": {
+        "16": "launcher-icon-1x.png",
+        "32": "launcher-icon-1x.png",
+        "48": "launcher-icon-1x.png",
+        "128": "launcher-icon-1x.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "launcher-icon-1x.png",
+      "32": "launcher-icon-1x.png",
+      "48": "launcher-icon-1x.png",
+      "128": "launcher-icon-1x.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.bilbasen.dk/*"
+        ],
+        "js": [
+          "content.js"
+        ],
+        "run_at": "document_end"
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+}
