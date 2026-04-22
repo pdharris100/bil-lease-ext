@@ -63,7 +63,7 @@ Then in `chrome://extensions`, click **Reload** on the extension.
 
 ## Testing
 
-There’s a small Node-based test that runs the real scraper against a saved Bilbasen HTML file using `jsdom`:
+There’s a small Node-based test that runs the real scraper against a saved Bilbasen HTML file (stored with a `.txt` suffix) using `jsdom`:
 
 ```bash
 npm test

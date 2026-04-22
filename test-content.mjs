@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { JSDOM, VirtualConsole } from 'jsdom';
 
 const html = fs.readFileSync(
-    new URL('./Brugt Porsche Taycan 4S Performance+ 4d - Bilbasen.html', import.meta.url),
+    new URL('./Brugt Porsche Taycan 4S Performance+ 4d - Bilbasen.txt', import.meta.url),
     'utf8'
 );
 
